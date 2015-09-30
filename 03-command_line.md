@@ -51,6 +51,12 @@ for example:
 
 will find any txt file in the current directly and remove them
 
+another example:
+
+`find . -name '*.c'|xargs grep 'baqi'`
+
+this will check all files ending with c and then list the files that has baqi...
+
 
 I found helpful tutorial on `xargs` here: 
 http://www.thegeekstuff.com/2013/12/xargs-examples/
