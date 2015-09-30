@@ -13,6 +13,7 @@ these in a couple of hours.
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
 > > here are my 10 command(ments):
+
 `hostname` -- name of the computer
 
 `pushd`and `popd`--move around between directories
