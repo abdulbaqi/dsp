@@ -28,7 +28,13 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+`ls` -- list directory contents
+
+`ls -a` -- include files starting with .
+
+`ls -l` -- use long listing with more information like access rights and dates
+
+`ls -lh` -- print in human readable format like the size are appended with k or m
 
 ---
 
@@ -37,7 +43,19 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > it will take as input the output of previous piped command and do useful stuff
+
+for example:
+
+`find . -name "*.txt"|xargs rm -rf`
+
+will find any txt file in the current directly and remove them
+
+
+I found helpful tutorial on `xargs` here: 
+http://www.thegeekstuff.com/2013/12/xargs-examples/
+
+
 
 ---
 
