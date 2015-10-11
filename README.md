@@ -38,7 +38,7 @@ Most people use Macs. They're too expensive, but they work really well and they 
 
 If you want to spend time learning how to configure things, I recommend learning how to configure Linux over learning how to configure Windows.
 
-**Q:  Can I discuss prework with other students in the course?**  
+**Q:  Can I discuss pre-work with other students in the course?**  
 A:   Absolutely.
 
 **Q:  Can I ask for hints for python questions?**  
