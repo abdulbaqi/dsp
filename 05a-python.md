@@ -97,7 +97,48 @@ the above example can be done using lambda and map as follows
 ```
 map(lambda x:len(x),words)
 ```
+
+as for the `filter` function, it works in similar manner, except that the lambda function acts as a filter to sort out any member of the provided list that does not satisfy the this lambda function.
+
+for example, taking the above list of `words`, the following filter takes only the words with length more than 3.
+
+```
+filter(lambda w:len(w)>3,words)
+```
+and the equivalent list comprehension could be
+```
+[w for w in words if len(w)>3]
+```
+
 however, it should be noted that the list comprehension is for readable and efficient than map and lambda, this has been highlighted in the following stackoverflow [link](http://stackoverflow.com/questions/1247486/python-list-comprehension-vs-map)
+
+####set comprehension
+
+this works in similar ways.
+so, let me convert the `words` list into set first.
+```
+set_words = set(words)
+```
+so here is the content of this set
+```
+set(['brown', 'lazy', 'over', 'fox', 'dog', 'the', 'quick', 'The', 'jumps'])
+```
+note above that `the` and `The` are repeated because one starts with lower and the other with caps.
+
+here is an example of set comprehension where `lower()` function is applied on this set. we should have as output only one `the`.
+note that we use curly brackets to denote set comprehension 
+```
+>>> {w.lower() for w in words}
+set(['brown', 'lazy', 'over', 'fox', 'dog', 'quick', 'the', 'jumps'])
+```
+
+####dictionary comprehension
+
+this works in similar manner, here is an example carried from previous examples, where I created a dictionary of words being the key with their length as values
+
+>>> d={w:len(w) for w in words}
+>>> d
+{'brown': 5, 'lazy': 4, 'over': 4, 'fox': 3, 'dog': 3, 'the': 3, 'quick': 5, 'The': 3, 'jumps': 5}
 
 ---
 
